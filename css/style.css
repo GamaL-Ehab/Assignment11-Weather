@@ -1,0 +1,23 @@
+body{
+    background-image: url(../images/waves-2560x1440-white-sunset-26002.jpg); 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}  
+.weather-info{
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(0, 106, 255, 0.7));
+    transition: all 0.5s;
+}
+.weather-info:hover{
+    box-shadow: 0px 0px 10px 10px rgba(0, 106, 255, 0.6);
+    scale: 1.1;
+}
+#currentDay{
+    border: 5px solid rgba(255, 255, 255, 0.55);
+}
+.navbar-nav .nav-link.active{
+    background-color: #0DCAF0;
+    color: white;
+    border-radius: 10px;
+}
+.container footer{
+    letter-spacing: 3px;
+}

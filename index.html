@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand fs-3" href="#"><i class="fa-solid fa-cloud-moon fs-2 text-info"></i> Weather</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="search my-5 col-10 mx-auto">
+        <div class="inner mx-auto bg-white w-75 d-flex justify-content-between p-2 rounded-4">
+            <input id="searchInput" type="text" class="form-control w-75 d-inline-block border-0 shadow-none"
+                placeholder="Find your location..." />
+            <button id="searchBtn" class="btn btn-info text-white">Search</button>
+        </div>
+    </div>
+
+    <div class="container my-5 text-center">
+        <i id="loadingSpinner" class="fa-regular fa-snowflake fa-spin fs-1"></i>
+        <div class="row gap-lg-5 justify-content-center text-white" id="rowData">
+            <div id="currentDay" class="weather-info col-10 col-lg-4 text-center rounded-5 py-5 my-5">
+                <header class="text-white mb-3 p-2">
+                    <p class="fs-4 bg-black bg-opacity-75 rounded-5 py-2"></p>
+                </header>
+                <h2 class="fs-1 fw-bold mb-4"></h2>
+                <h3 class="fs-1 fw-bold"></h3>
+                <div class="condition d-flex align-items-center justify-content-center pe-5">
+                    <img src="" alt="condition icon" />
+                    <h5 class="text-primary fw-bold fs-3"></h5>
+                </div>
+                <footer class="text-black d-flex justify-content-around py-3 fw-bold">
+                    <i class="fa-solid fa-umbrella"> <span id="rainP"></span>%</i>
+                    <i class="fa-solid fa-wind"> <span id="wSpeed"></span> KM/h</i>
+                    <i class="fa-solid fa-compass"> <span id="wDir"></span> </i>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-4 mt-5 d-flex align-items-center justify-content-center bg-dark bg-opacity-75">
+        <div class="search my-5 col-8">
+            <div class="inner mx-auto bg-white w-75 d-flex justify-content-between p-2 rounded-4">
+                <input type="email" class="form-control w-75 d-inline-block border-0 shadow-none"
+                    placeholder="Enter your Email to Subscribe..." />
+                <button class="btn btn-info">Subscribe</button>
+            </div>
+        </div>
+        <div class="social-icons text-white fs-4">
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.google.com" target="_blank"><i class="fa-brands fa-google p-1 text-warning"></i></a>
+            <a href="https://www.x.com" target="_blank"><i class="fa-brands fa-twitter text-info"></i></a>
+            <a href="https://www.pinterest.com" target="_blank"><i
+                    class="fa-brands fa-pinterest p-1 text-danger"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
